@@ -1,28 +1,81 @@
-# Book Details API
+# Digital Library System
+
+An integrated solution for barcode scanning, book management, and seamless data visualization across web and mobile platforms.
 
 ## Overview
 
-The Book Details API is a RESTful API for managing book details. It integrates with the Google Books API to fetch book information based on ISBN or title. The API also allows adding book details to a database and supports searching for books by title.
+This repository consists of three interconnected projects designed to manage a digital library:
 
-## Features
+API: A backend service that integrates with Google Books API to fetch book details and manage the library database.
 
-* Fetch book details by ISBN from Google Books API.
+Mobile App: An Android application for scanning book barcodes, retrieving details via the API, and displaying information.
 
-* Search books by title (full or partial).
+Blazor Web App: A web-based application for managing and viewing the digital library in a responsive UI.
 
-* Store book details in a database (SQL Server).
+Together, these components enable efficient book management, from barcode scanning to data visualization.
 
-* Retrieve all stored books.
+## System Architecture
 
-* Integrate with Blazor front-end applications.
+## Diagram
+Below is a simplified diagram illustrating how the API, Mobile App, and Blazor Web App interact within the system:
+```
+[ Mobile App ] -> [ API ] -> [ Database ]
+       |
+       v
+[ Google Books API ]
+```
+## Components
 
-## Technologies Used
-* ASP.NET Core: Backend framework for building the API
-* Entity Framework Core: ORM for database interactions.
-* SQL Server: Database for persisting book details.
-* Google Books API: External API for fetching book data.
-* AutoMapper: Object mapping for converting DTOs and database models.
-* Swashbuckle: Integration for Swagger UI.
+1. Mobile App:
+
+* Scans ISBN barcodes using the device camera.
+
+* Sends the ISBN to the API for book details.
+
+* Displays book information on the device.
+
+2. API:
+
+* Fetches book details from Google Books API.
+
+* Stores book data in a SQL Server database.
+
+* Provides endpoints for book retrieval and searching.
+
+3. Blazor Web App:
+
+* Fetches book data from the API and database.
+
+* Displays books in a table or card layout.
+
+* Allows users to search for and manage book details.
+
+### Prerequisites
+
+## Common Requirements
+* .NET 6.0 SDK or higher
+* SQL Server (local or Azure)
+* Android SDK and Android Studio (for the mobile app)
+
+## Project-Specific Requirements
+
+| Project          | Requirements  |
+| ---------------- | ------------- |
+| API              | Entity Framework Core, AutoMapper, Swagger  |
+| Mobile App       | Retrofit, ZXing Barcode Scanner library     |
+| Blazor Web App   | Blazor Server                               |
+
+# Project Details
+API Project
+
+Overview
+
+The backend service that integrates with the Google Books API to fetch book details and stores them in a SQL Server database.
+
+Features
+* Fetch book details by ISBN.
+* Search books by title.
+* Store book data in a structured database.
 
 ## Installation Steps
 1. Clone the repository
@@ -46,16 +99,44 @@ dotnet ef database update
 ```
 dotnet run
 ```
+# Mobile App
 
-## Endpoints
-1. Fetch Book by ISBN
-  * GET ```api/Books/{isbn}```
-  * Description: Fetch book details by ISBN from Google Books API and store the data in the database
+Overview
 
-2. Search Book by Title
-  * GET ```api/Books/search?title={title}```
-  * Description: Searches books by title from Google Books API and store them in the database
+An Android application that scans book barcodes, retrieves details from the API, and displays them to the user.
 
-3. Retrieve all stored Books
-  * GET ```/api/Books```
-  * Description: Retrieves all stored books from the database
+Features
+* Scan book barcodes using ZXing.
+* Fetch book details via the API.
+* Display book details to the user.
+
+# Blazor Web App
+
+Overview
+
+A web-based application for managing and visualizing the digital library.
+
+Features
+* Search and view book details.
+* Display books in a responsive card or table layout.
+* Manage stored books.
+
+## Future Enhancements
+
+Below are some potential future improvements for the system. They are listed in order of priority to guide contributors:
+
+1. Add user authentication to the API and Blazor app:
+    * Context: This would enhance security and allow for user-specific features like personal book collections or borrowing history.
+    * Priority: High
+
+2. Implement a book lending feature in the Blazor app:
+    * Context: Enable users to borrow and return books through the web interface, tracking due dates and availability.
+    * Priority: Medium
+
+3. Enhance the mobile app with offline capabilities:
+    * Context: Allow the app to store scanned book data locally when offline, syncing with the server once reconnected.
+    * Priority: Medium
+
+4. Add advanced search and filtering options in the web app:
+    * Context: Improve usability by allowing users to search books by various criteria (e.g., genre, author) and apply filters.
+    * Priority: Low
