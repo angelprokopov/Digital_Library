@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2025-01-17T20:27:01.1460875Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2025-01-17T21:10:28.1420951Z"
+    }
+  },
+  "parameters": {
+    "apis1.resourceGroupName": {
+      "Name": "apis1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "BookDetailsAPI20250117221511ResourceGroup"
+    },
+    "apis1.subscriptionId": {
+      "Name": "apis1.subscriptionId",
+      "Type": "subscription",
+      "Value": "b2c9c3d0-15f8-4d91-89b5-a59e783650d5"
+    }
+  }
+}
