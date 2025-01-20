@@ -35,6 +35,7 @@ namespace BookDetailsAPI.Controllers
             var sharedBook = _mapper.Map<SharedModels.Book>(externalBook);
             return Ok(sharedBook);
         }
+        
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<SharedModels.Book>>> SearchBooksByTitle([FromQuery] string title)
         {
@@ -43,19 +44,23 @@ namespace BookDetailsAPI.Controllers
 
             var googleBooks = await _google.GetBooksByTitle(title);
             if (googleBooks == null || !googleBooks.Any())
-                return NotFound("");
+                return NotFound("No books found matching the title");
 
             var books = googleBooks.Select(MapDtoToEntity).ToList();
 
+            var existingISBN = _context.Books.Select(b=>b.ISBN).ToHashSet();
+
             foreach(var book in books)
             {
-                if(!_context.Books.Any(b=>b.ISBN==book.ISBN))
+                if(!existingISBN.Contains(book.ISBN))
                 {
                     var dbBook = _mapper.Map<BookDetailsAPI.Models.Book>(book);
                     _context.Books.Add(dbBook);
                 }
                    
             }
+
+            await _context.SaveChangesAsync();
 
             return Ok(books);
         }

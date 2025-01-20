@@ -25,6 +25,14 @@ namespace BookDetailsAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             var app = builder.Build();
@@ -52,6 +60,7 @@ namespace BookDetailsAPI
 
             app.UseAuthorization();
 
+            app.UseCors("AllowAll");
 
             app.MapControllers();
 

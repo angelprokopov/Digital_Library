@@ -6,6 +6,8 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\De
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\BookDetailsAPI.runtimeconfig.json
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\BookDetailsAPI.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\BookDetailsAPI.pdb
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\Humanizer.dll
@@ -146,6 +148,8 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\De
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\SharedModels.dll
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\SharedModels.pdb
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.csproj.AssemblyReference.cache
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.AssemblyInfoInputs.cache
@@ -171,7 +175,3 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\De
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.pdb
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.genruntimeconfig.cache
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\ref\BookDetailsAPI.dll
-C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\SharedModels.dll
-C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\SharedModels.pdb
