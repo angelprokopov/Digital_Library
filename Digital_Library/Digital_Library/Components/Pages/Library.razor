@@ -1,0 +1,46 @@
+﻿@page "/library"
+@using Digital_Library.Services
+@using SharedModels
+@inject BookService BookService
+
+<h3 class="text-light d-flex align-items-center justify-content-center">Library</h3>
+
+@if(books == null) {
+    <p></p>
+} 
+else {
+    <div>
+        @foreach(var book in books) {
+            <div class="col-md-4 mb-3">
+                <div class="">
+                    <img src="@book.CoverUrl" class="card-img-top" style="max-height:200px;object-fit:cover;" />
+                    <div class="card-body">
+                        <h4 class="card-title">@book.Title</h4>
+                        <h5 class="card-subtitle mb-3 text-muted">Author: @book.Author</h5>
+                        <p class="card-text">
+                            <strong>Genre:</strong> @book.Genre
+                            <strong>ISBN:</strong> @book.ISBN
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Book> books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            books = await BookService.GetBooksAsync();
+        }
+        catch (Exception ex)
+        {
+            
+            Console.WriteLine($"Error fetching books: {ex.Message}");
+        }
+    }
+}
