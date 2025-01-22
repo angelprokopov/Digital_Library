@@ -17,30 +17,50 @@ namespace BookDetailsAPI.Services
         {
             if (string.IsNullOrEmpty(title))
                 throw new ArgumentException("Title cannot be null or empty", nameof(title));
-            var apiUrl = $"https://www.googleapis.com/books/v1/volumes?q=intitle:{Uri.EscapeDataString(title)}";
 
-            var response = await _httpClient.GetAsync(apiUrl);
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"Google Books API request failed: {response.ReasonPhrase}");
-
-            var googleBooksResponse = await response.Content.ReadFromJsonAsync<GoogleBooksApiResponse>();
-            var books = new List<GoogleBookDTO>();
-            if(googleBooksResponse?.Items != null)
+            try
             {
-                foreach(var item in googleBooksResponse.Items)
-                {
-                    books.Add(new GoogleBookDTO
-                    {
-                        Title = item.VolumeInfo.Title,
-                        Authors = item.VolumeInfo.Authors ?? new List<string>(),
-                        Categories = item.VolumeInfo.Categories ?? new List<string>(),
-                        ThumbnailUrl = item.VolumeInfo.ImageLinks?.Thumbnail,
-                        ISBN = item.VolumeInfo.IndustryIdentifiers?.FirstOrDefault().Identifier
-                    });
-                }
-            }
+                var apiUrl = $"https://www.googleapis.com/books/v1/volumes?q={title}";
 
-            return books;
+                var response = await _httpClient.GetAsync(apiUrl);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Google Books API request failed: {response.ReasonPhrase}");
+                    throw new HttpRequestException($"Google Books API request failed: {response.ReasonPhrase}");
+                }
+                
+                var googleBooksResponse = await response.Content.ReadFromJsonAsync<GoogleBooksApiResponse>();
+
+                if(googleBooksResponse == null )
+                {
+                    Console.WriteLine("Google Books API returned an empty or invalid response");
+                    return new List<GoogleBookDTO>();
+                }
+
+                var books = new List<GoogleBookDTO>();
+                if (googleBooksResponse.Items != null)
+                {
+                    foreach (var item in googleBooksResponse.Items)
+                    {
+                        books.Add(new GoogleBookDTO
+                        {
+                            Title = item.VolumeInfo.Title ?? "Unknown Title",
+                            Authors = item.VolumeInfo.Authors ?? new List<string> { "Unknown Author" },
+                            Categories = item.VolumeInfo.Categories ?? new List<string>(),
+                            ThumbnailUrl = item.VolumeInfo.ImageLinks?.Thumbnail ?? "No thumbnail",
+                            ISBN = item.VolumeInfo.IndustryIdentifiers?.FirstOrDefault()?.Identifier ?? "Unknown ISBN"
+                        });
+                    }
+                }
+
+                return books;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error in GetBooksByTitle: {e.Message}");
+                throw;
+            }            
         }
 
         public async Task<Book> GetBookByISBN(string isbn)

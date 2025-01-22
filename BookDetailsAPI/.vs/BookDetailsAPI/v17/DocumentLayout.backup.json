@@ -3,15 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\bookdetailsapi\\bookdetailsapi\\services\\googlebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|solutionrelative:bookdetailsapi\\services\\googlebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\bookdetailsapi\\bookdetailsapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|solutionrelative:bookdetailsapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11AFC9B5-6736-4426-B76B-9A319B6274F0}|..\\Digital_Library\\Digital_Library\\Digital_Library.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\digital_library\\digital_library\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\bookdetailsapi\\bookdetailsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|solutionrelative:bookdetailsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\bookdetailsapi\\bookdetailsapi\\bookdetailsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|solutionrelative:bookdetailsapi\\bookdetailsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9DABCA6B-0AFB-48F6-8884-1EEF2413187F}|BookDetailsAPI\\BookDetailsAPI.csproj|c:\\users\\angel\\source\\repos\\bookdetails_api\\bookdetailsapi\\bookdetailsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -25,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,28 +62,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "BookDetailsAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\appsettings.json",
-              "RelativeToolTip": "BookDetailsAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-20T09:36:46.011Z",
+              "DocumentIndex": 0,
+              "Title": "GoogleBooksService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Services\\GoogleBooksService.cs",
+              "RelativeDocumentMoniker": "BookDetailsAPI\\Services\\GoogleBooksService.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Services\\GoogleBooksService.cs",
+              "RelativeToolTip": "BookDetailsAPI\\Services\\GoogleBooksService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T20:27:45.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\Digital_Library\\Digital_Library\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "..\\Digital_Library\\Digital_Library\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\Digital_Library\\Digital_Library\\Services\\BookService.cs",
-              "RelativeToolTip": "..\\Digital_Library\\Digital_Library\\Services\\BookService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookDetailsAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookDetailsAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAUwEAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T08:09:24.906Z",
+              "WhenOpened": "2025-01-22T20:05:43.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookDetailsAPI",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\BookDetailsAPI.csproj",
+              "RelativeDocumentMoniker": "BookDetailsAPI\\BookDetailsAPI.csproj",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\BookDetailsAPI.csproj",
+              "RelativeToolTip": "BookDetailsAPI\\BookDetailsAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-22T19:33:01.283Z",
               "EditorCaption": ""
             },
             {
@@ -89,22 +107,22 @@
               "RelativeDocumentMoniker": "BookDetailsAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Program.cs",
               "RelativeToolTip": "BookDetailsAPI\\Program.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwDwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T08:08:45.229Z",
+              "WhenOpened": "2025-01-22T17:41:41.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookDetailsAPI\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookDetailsAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwEAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T07:49:45.934Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BookDetailsAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\BookDetails_API\\BookDetailsAPI\\BookDetailsAPI\\appsettings.json",
+              "RelativeToolTip": "BookDetailsAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T09:36:46.011Z",
               "EditorCaption": ""
             }
           ]

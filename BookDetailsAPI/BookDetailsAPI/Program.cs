@@ -17,7 +17,7 @@ namespace BookDetailsAPI
             builder.Services.AddControllers();
             builder.Services.AddDbContext<BookContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? builder.Configuration["ConnectionStrings:DefaultConnection"]);
             });
             builder.Services.AddScoped<GoogleBooksService>();
             builder.Services.AddHttpClient();
@@ -32,6 +32,8 @@ namespace BookDetailsAPI
                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                 });
             });
+
+            builder.Configuration.AddUserSecrets<Program>();
 
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
