@@ -77,28 +77,12 @@ Features
 * Search books by title.
 * Store book data in a structured database.
 
-## Installation Steps
-1. Clone the repository
-```
-git clone <repository-url>
-cd BookDetailsAPI
-```
-2. Setup the Database
-* Update the ``` appsettings.json``` with your SQL Server connection string
+## Production API Link
+https://bookdetailsapi.azurewebsites.net/
 
-```
-"ConnectionStrings": {
-    "DefaultConnection": "Server=your_server;Database=BookDetails;User Id=your_user;Password=your_password;"
-}
-```
-* Run migrations to create the database schema
-```
-dotnet ef database update
-```
-3. Run the application
-```
-dotnet run
-```
+## API Endpoints
+* GET /api/Books/{isbn}: Fetch book details by ISBN
+* GET /api/Books/GET /api/Books/search?title={title}: Search books by title.
 # Mobile App
 
 Overview
