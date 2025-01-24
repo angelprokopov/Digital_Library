@@ -70,7 +70,7 @@ API Project
 
 Overview
 
-The backend service that integrates with the Google Books API to fetch book details and stores them in a SQL Server database.
+The backend service that integrates with the Google Books API & Open Library Books API to fetch book details and stores them in a SQL Server database.
 
 Features
 * Fetch book details by ISBN.
