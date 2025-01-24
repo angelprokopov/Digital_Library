@@ -175,3 +175,4 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Re
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Release\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Release\net8.0\SharedModels.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Release\net8.0\SharedModels.pdb
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Release\net8.0\Newtonsoft.Json.dll

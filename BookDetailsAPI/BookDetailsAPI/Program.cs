@@ -35,6 +35,8 @@ namespace BookDetailsAPI
 
             builder.Configuration.AddUserSecrets<Program>();
 
+            builder.Services.AddHttpClient<OpenLibraryService>();
+
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             var app = builder.Build();

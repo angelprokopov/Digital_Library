@@ -15,12 +15,13 @@ namespace BookDetailsAPI.Controllers
         private readonly BookContext _context;
         private readonly GoogleBooksService _google;
         private readonly IMapper _mapper;
-
-        public BooksController(BookContext context, GoogleBooksService google, IMapper mapper)
+        private readonly OpenLibraryService _openLibraryService;
+        public BooksController(BookContext context, GoogleBooksService google, IMapper mapper, OpenLibraryService service)
         {
             _context = context;
             _google = google;
             _mapper = mapper;
+            _openLibraryService = service;
         }
 
         [HttpGet("{isbn}")]
@@ -63,6 +64,20 @@ namespace BookDetailsAPI.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(books);
+        }
+
+        [HttpGet("openlibrary/{isbn}")]
+        public async Task<ActionResult<OpenLibraryBookDTO>> GetBooksFromOpenLibrary(string isbn)
+        {
+            if (string.IsNullOrEmpty(isbn))
+                return BadRequest("ISBN cannot be empty");
+
+           var book = await _openLibraryService.GetBooksByISBN(isbn);
+
+            if (book == null)
+                return NotFound("No books are found with the given ISBN");
+
+            return Ok(book);
         }
 
         private Models.Book MapDtoToEntity(GoogleBookDTO dto)

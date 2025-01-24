@@ -175,3 +175,4 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\De
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.pdb
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\BookDetailsAPI.genruntimeconfig.cache
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Debug\net8.0\ref\BookDetailsAPI.dll
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\bin\Debug\net8.0\Newtonsoft.Json.dll

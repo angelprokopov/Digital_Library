@@ -34,6 +34,7 @@ C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Re
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Angel\source\repos\BookDetails_API\BookDetailsAPI\BookDetailsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
