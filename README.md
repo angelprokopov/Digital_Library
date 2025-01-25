@@ -36,7 +36,7 @@ Below is a simplified diagram illustrating how the API, Mobile App, and Blazor W
 
 2. API:
 
-* Fetches book details from Google Books API & Open Library Books API.
+* Fetches book details from Google Books API.
 
 * Stores book data in a SQL Server database.
 
