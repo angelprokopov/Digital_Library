@@ -90,45 +90,6 @@
           }
         }
       }
-    },
-    "/api/Books/openlibrary/{isbn}": {
-      "get": {
-        "tags": [
-          "Books"
-        ],
-        "parameters": [
-          {
-            "name": "isbn",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/OpenLibraryBookDTO"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/OpenLibraryBookDTO"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/OpenLibraryBookDTO"
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -158,46 +119,6 @@
           },
           "coverUrl": {
             "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "OpenLibraryBookDTO": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "authors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "coverUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "isbn": {
-            "type": "string",
-            "nullable": true
-          },
-          "publisher": {
-            "type": "string",
-            "nullable": true
-          },
-          "publishDate": {
-            "type": "string",
-            "nullable": true
-          },
-          "subjects": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
             "nullable": true
           }
         },

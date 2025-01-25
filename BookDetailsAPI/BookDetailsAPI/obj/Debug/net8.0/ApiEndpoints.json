@@ -27,32 +27,6 @@
   },
   {
     "ContainingType": "BookDetailsAPI.Controllers.BooksController",
-    "Method": "GetBooksFromOpenLibrary",
-    "RelativePath": "api/Books/openlibrary/{isbn}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "isbn",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BookDetailsAPI.Data.OpenLibraryBookDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookDetailsAPI.Controllers.BooksController",
     "Method": "SearchBooksByTitle",
     "RelativePath": "api/Books/search",
     "HttpMethod": "GET",
