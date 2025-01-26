@@ -81,6 +81,7 @@ Production API Link
 https://bookdetailsapi.azurewebsites.net/
 
 ## API Endpoints
+* GET /api/Books: Lists all books which are saved in the database
 * GET /api/Books/{isbn}: Fetch book details by ISBN
 * GET /api/Books/GET /api/Books/search?title={title}: Search books by title.
 # Mobile App
