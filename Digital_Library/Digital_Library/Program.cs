@@ -4,6 +4,7 @@ using Digital_Library.Data;
 using Digital_Library.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace Digital_Library
@@ -50,7 +51,7 @@ namespace Digital_Library
                 .AddDefaultTokenProviders();
 
 
-            builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
+            builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
             var app = builder.Build();
 

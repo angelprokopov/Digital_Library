@@ -33,16 +33,16 @@ namespace Digital_Library.Services
         public async Task<List<Book>> SearchBookByTitleAsync(string title)
         {
             var response = await _httpClient.GetAsync($"api/Books/search?title={Uri.EscapeDataString(title)}");
-            if (response.IsSuccessStatusCode)
+            
+            if(response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadFromJsonAsync<List<Book>>();
+                var books = await response.Content.ReadFromJsonAsync<List<Book>>();
+                return books ?? new List<Book>();
             }
-            else if(response.StatusCode==System.Net.HttpStatusCode.NotFound)
+            else
             {
-                return new List<Book>();
+                throw new Exception("Failed to fetch books from the API");
             }
-
-            throw new HttpRequestException($"Error fetching books: {response.ReasonPhrase}");
         }
     }
 }
