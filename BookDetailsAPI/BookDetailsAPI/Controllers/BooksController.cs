@@ -22,6 +22,20 @@ namespace BookDetailsAPI.Controllers
             _mapper = mapper;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<SharedModels.Book>>> GetAllBooks()
+        {
+            var books = await _context.Books.ToListAsync();
+            if(books.Count == 0)
+            {
+                return NotFound("No books found in the database");
+            }
+
+            var sharedBooks = _mapper.Map<List<SharedModels.Book>>(books);
+
+            return Ok(sharedBooks);
+        }
+
         [HttpGet("{isbn}")]
         public async Task<ActionResult<SharedModels.Book>> GetBookByISBN(string isbn)
         {
